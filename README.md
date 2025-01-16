@@ -4,8 +4,8 @@ rooms rooms rooms
 
 I wrote this after a frustrating day of mindless study space searching. This repo is the answer. It contains three files
 
-optim.py: the selenium script that goes and books the room
-config.ini: an easier way to change config settings, in the future I think I will add more rooms, if this proves valuable
+optim.py: the selenium script that goes and books the room;
+config.ini: an easier way to change config settings, in the future I think I will add more rooms, if this proves valuable;
 roomBook.bat: small script that to use in windows task scheduler
 Extra considerations:
 
