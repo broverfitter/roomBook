@@ -11,7 +11,7 @@ import configparser
 class UCLRoomBooker:
     def __init__(self):
         options = Options()
-        #options.add_argument("--headless")
+        options.add_argument("--headless")
 
         self.driver = webdriver.Firefox(options=options)
         self.wait = WebDriverWait(self.driver, 10)
@@ -25,7 +25,7 @@ class UCLRoomBooker:
         next_day_btn = wait.until(
             EC.element_to_be_clickable((By.XPATH, "//button[@type='button'][@class='fc-next-button btn btn-default btn-sm']"))
         )
-        #next_day_btn.click()
+        next_day_btn.click()
         next_day_btn.click()
         next_day_btn.click()
 
@@ -91,7 +91,7 @@ class UCLRoomBooker:
                 "//button[@class='btn btn-primary' and @type='submit' and @id='btn-form-submit']"
             ))
         )
-        #submit_final.click()
+        submit_final.click()
 
     def run_booking(self, time):
         self.BookRoom(time, self.driver, self.wait)
